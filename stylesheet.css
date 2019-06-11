@@ -1,0 +1,452 @@
+*{
+box-sizing:border-box;
+list-style: none;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+p{
+  color: rgba(0,0,0,0.8);
+  font-weight:bold;
+}
+.container {
+  width:100%;
+  max-width: 1024px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container h2{
+  font-size:20px;
+}
+.container p{
+  font-size:14px;
+  line-height: 33px;
+}
+
+
+
+
+
+/* ヘッダーについて*/
+header {
+  height:80px;
+  width: 105%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position:fixed;
+  top:0px;
+  z-index:10;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,.14);
+}
+.header-left {
+  float: left;
+  display: inline-block;
+  width:30%;
+}
+.header-left a{
+  line-height: 80px;
+  color:#800000;
+  font-size:20px;
+  font-weight: bold;
+  cursor : pointer;
+}
+.header-right {
+  float: right;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+  width:70%;
+  position: relative;
+}
+.header-right li{
+  margin-right: 15px;
+  padding-bottom: 0px;
+  float: left;
+  font-size: 0.875rem;
+  line-height: 30px;
+}
+.header-right li:hover {
+  background-color: rgba(255,165,0,0.5) ;
+  border-radius: 10px;
+}
+.header-right a {
+  line-height: 50px;
+  height:50px;
+  padding: 0px 30px;
+  color:#220000;
+  display: block;
+}
+
+/*  スマホ用ヘッダー*/
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+/*中身*/
+#nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;/*最前面に*/
+    width: 90%;/*右側に隙間を作る*/
+    max-width: 330px;/*最大幅*/
+    height: 100%;
+    background: #fff;/*背景色*/
+    transition: .3s ease-in-out;/*滑らかに表示*/
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);/*左に隠しておく*/
+}
+
+
+
+/*  ヘッダーのための余白*/
+.top-wrapperTowhite{
+  height:20px;
+}
+
+
+/*  トップ*/
+.top-wrapper{
+  height:700px;
+  background-image:url(top.jpg);
+  background-size:cover;
+  text-align: center;
+}
+.top-wrapper h1{
+  padding-top: 250px;
+  opacity: 0.8;
+  color:black;
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+.top-wrapper h2{
+  font-size:20px;
+  color:black;
+  opacity: 0.8;
+  margin-top:0px;
+}
+
+/*  私たちについてと目的説明*/
+.about-wrapper{
+  height: 800px;
+  background-color: #f5f5f5;
+}
+.about-name{
+  float: left;
+  text-align: center;
+  width: 40%;
+  background-color: orange;
+  padding:300px 0px;
+  margin:50px 0px 0px 10px;
+}
+.about-text{
+  float: right;
+  background-color: white;
+  width:58%;
+  padding:40px 100px 30px 50px;
+  margin-top:20px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+}
+.about-name h2{
+  font-family:'Comic Sans MS',cursive;
+  font-size: 40px;
+}
+.about-text p{
+  font-size: 12px;
+  line-height: 27px;
+}
+.about-text h2{
+  font-size: 30px;
+  color:orange;
+  padding-bottom: 20px;
+}
+
+/*  ビジョンの提示*/
+.select-text-wrapper{
+  height: 270px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.select-text-wrapper h2{
+  padding: 80px 0px;
+  margin: 0px;
+  font-size:16px;
+  line-height: 40px;
+}
+
+/*  ４つのボタン*/
+.select-wrapper{
+  height:700px;
+  padding:0px 8%;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+/*  ４つのボタンーザ・コーチと７つの習慣*/
+.the-coach{
+  margin-bottom: 25px;
+}
+.the-btn{
+  height: 250px;
+  width: 100%;
+  display: block;
+  transition:  .5s;
+  border-radius: 10px;
+  cursor : pointer;
+  background-color: white;
+}
+.the-coach-text{
+  float:left;
+  display: inline-block;
+  width: 50%;
+  padding-top:100px;
+
+}
+.the-coach-text2{
+  float:right;
+  display:inline-block;
+  width:50%;
+  padding-top:35px;
+}
+.the-btn:hover {
+  background-color: rgba(255,165,0,0.8) ;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.the-coach-text2 p{
+  text-align: left;
+}
+.the-coach-text3 {
+  display:none;
+}
+/*  ４つのボタンー鮮文の就活*/
+.the-syukatsu{
+  float: left;
+  width:33%;
+}
+.the-text h2{
+  padding:50px 0px 30px 0px;
+}
+.the-text p{
+  padding:0px 7%;
+}
+/*  ４つのボタンーES作成*/
+.the-es{
+  float: left;
+  width:33%;
+}
+
+/*  ４つのボタンーよくある質問*/
+.the-faq{
+  float: left;
+  width:33%;
+}
+
+
+
+
+/*  フッター*/
+footer {
+  width:100%;
+  height:100px;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+footer p{
+  float:right;
+  padding-top:60px;
+  color:white;
+  margin:0px;
+}
+
+
+/*  */
+/*  それぞれのページの共通部分*/
+/*  */
+/*  前書き*/
+.interest-wrapper{
+  padding-top:100px;
+  width: 100%;
+  height: 450px;
+}
+.interest-wrapper a{
+  color:blue;
+  font-size: 14px;
+  text-decoration:underline;
+}
+.interest-text{
+  float: left;
+  width:60%;
+  padding-right: 5%;
+  text-align: left;
+}
+.interest-text h2{
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+.interest-img{
+  float: right;
+  width:40%;
+  margin-top:40px;
+}
+.interest-img img{
+  border-radius: 20px;
+}
+/*  押すページが開く*/
+.faq-wrapper {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 180px;
+  color: rgba(0,0,0,0.8);
+  padding-top:200px;
+}
+#faq-list {
+  width: 950px;
+  margin: 0 auto;
+  padding:30px 0px 0px  0px;
+  list-style: none;
+}
+.faq-list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+}
+.faq-list-item h2 {
+  font-size: 20px;
+}
+.faq-list-item h3 {
+  font-size: 20px;
+}
+.faq-list-item span {
+  position:absolute;
+  top:0;
+  right:5px;
+  color:black;
+  font-size:13px;
+}
+.answer {
+  font-size: 15px;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+  display: none;
+}
+.answer h2{
+  margin:0;
+  padding:0;
+}
+.answer p{
+  font-weight: normal;
+}
+/*  資料ダウンロードボタン*/
+.Download-wrapper{
+  height: 150px;
+}
+.Download{
+  height: 80px;
+  margin:auto;
+  text-align: center;
+  width: 300px;
+  display: block;
+  transition:  .5s;
+  border-radius: 10px;
+  cursor : pointer;
+  background-color:rgba(255,165,0);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);/*影*/
+}
+.Download-wrapper a{
+  font-size: 20px;
+  color: rgba(0,0,0,0.8);
+  line-height: 80px;
+  font-weight: bold;
+}
+.Download:hover {
+  background-color: rgba(255,165,0,0.5) ;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+
+/*  */
+/*  自己啓発のページ*/
+/*  */
+
+
+/*  */
+/*  就活のページのCSS*/
+/*  */
+
+
+/*  */
+/*  ESのページのCSS*/
+/*  */
+
+
+/*  */
+/*  FAQページのCSS*/
+/*  */
+/*  きよみさんへの促進*/
+.section-title {
+  border-bottom: 1px solid #dee7ec;
+  font-size: 23px;
+  color:rgba(0,0,0,.8);
+  padding-bottom: 15px;
+  margin:0 10% 40px 10%;
+}
+/*  メールフォーム*/
+.contact-form{
+  text-align: center;
+  height:700px;
+}
+input, textarea{
+  width:300px;
+  font-size:15px;
+  padding:5px;
+  border:1px solid #gray;
+}
+textarea{
+  height: 200px;
+  font-family: cursive;
+}
+.contact-submit{
+  height: 60px;
+  margin:auto;
+  text-align: center;
+  width: 250px;
+  display: block;
+  transition:  .5s;
+  border-radius: 10px;
+  cursor : pointer;
+  border-style: none;
+  background-color:rgba(255,165,0);
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.8);
+  padding-top:10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);/*影*/
+}
+.getheigth{
+  height: 40px;
+}
+.contact-submit:hover {
+  background-color: rgba(255,165,0,0.5) ;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.contact-form p{
+  margin-bottom: 0px;
+}
+.faq-list-item h3 {
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+/*  フォントをメイリオにする*/
+body{
+font-family:'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif !important;
+}
