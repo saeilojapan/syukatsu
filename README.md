@@ -1,4 +1,4 @@
-# syukatu
+# syukatsu
 
 鮮文大学の生徒の就活をサポートするサイト<br>
 1.top<br>
